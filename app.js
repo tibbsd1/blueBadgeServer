@@ -22,6 +22,6 @@ app.get("/test", function(req, res) {
   res.send('This is the test route. I wonder where this will show up.');
 });
 
-app.listen(3005, function() {
-  console.log("Currently running on port 3005");
+app.listen(process.env.PORT, function() {
+  console.log(`Currently running on ${process.env.PORT}`);
 });
